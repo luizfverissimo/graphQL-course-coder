@@ -1,0 +1,23 @@
+#Criando tipos
+type User {
+  id: Int!
+  name: String!
+  email: String!
+  age: Int
+  income: Float
+  vip: Boolean
+  phrase: String
+  profile: Profile
+  status: UserStatus
+}
+
+enum UserStatus {
+  ACTIVE
+  INACTIVE
+  BLOCKED
+}
+
+type Profile {
+  id: Int!
+  name: String!
+}

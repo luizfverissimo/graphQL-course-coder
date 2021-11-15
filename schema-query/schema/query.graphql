@@ -1,0 +1,12 @@
+# Pontos de entrada da API:
+type Query {
+  hello: String! # !deixa o retorno obrigatório
+  horaAtual: Date!
+  userLogged: User
+  featuredProduct: Product
+  numbersLottery: [Int!]!
+  users: [User]
+  user(id: Int): User
+  profiles: [Profile!]!
+  profile(id: Int!): Profile
+}
